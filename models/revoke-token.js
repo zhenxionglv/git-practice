@@ -1,7 +1,8 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-var RevokeTokenSchema = new Schema({
+const Schema = mongoose.Schema;
+
+const RevokeTokenSchema = new Schema({
   uid: String, // 用户id
   active: { // token是否有效
     type: Boolean,

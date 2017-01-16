@@ -10,6 +10,11 @@ function revokeToken() {
   this.add('role:auth, cmd:revokeToken_read', (msg, done) => {
     RevokeTokenService.getRevokeToken(msg, done);
   });
+
+  // 退出登录注销token
+  this.add('role:auth, cmd: revokeToken_logout', (msg, done) => {
+    RevokeTokenService.logoutRevokeToken(msg, done);
+  });
 }
 
 exports = module.exports = revokeToken;
