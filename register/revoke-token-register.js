@@ -11,7 +11,7 @@ function revokeToken() {
     RevokeTokenService.getRevokeToken(msg, done);
   });
 
-  // 退出登录注销token
+  // 注销token
   this.add('role:auth, cmd: revokeToken_logout', (msg, done) => {
     RevokeTokenService.logoutRevokeToken(msg, done);
   });
