@@ -23,7 +23,7 @@ function log() {
 }
 
 // 启动服务
-seneca({ log: { level: 'error+' } })
+module.exports = seneca({ log: { level: nconf.get('senecaLogLevel') } })
   .use(log)
   .use(revikeTokenregister)
   .listen({ type: 'http', port: nconf.get('seneca:auth:port') });

@@ -1,5 +1,6 @@
 {
   "mongodb": "mongodb://127.0.0.1/smartsport-db-1",
+  "senecaLogLevel": "none",
   "seneca": {
     "auth": {
       "port": 10001,
