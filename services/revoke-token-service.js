@@ -32,7 +32,7 @@ class RevokeTokenService {
     }
     return RevokeToken
       .findById(msg.data.id)
-      .then(token => done(null, token.toObject()))
+      .then(token => done(null, (token && token.toObject()) || null))
       .catch(done);
   }
 
