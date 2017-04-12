@@ -7,6 +7,13 @@
       "host": "127.0.0.1"
     }
   },
+  "consul": {
+    "host": "127.0.0.1",
+    "post": "8500",
+    "name": "auth",
+    "tags": ["auth"],
+    "address": "172.18.212.163"
+  },
   "logger": {
     "consoleLevel": 4,
     "fileLevel": 1,

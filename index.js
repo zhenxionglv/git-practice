@@ -1,6 +1,8 @@
 const seneca = require('seneca');
 const nconf = require('nconf');
 
+// 服务注册
+const consulRegister = require('./register/consul-register');
 // 根据环境变量获取config文件
 nconf.argv().env();
 const env = process.env.NODE_ENV || 'development';
@@ -26,4 +28,5 @@ function log() {
 module.exports = seneca({ log: { level: nconf.get('senecaLogLevel') } })
   .use(log)
   .use(revikeTokenregister)
+  .use(consulRegister)
   .listen({ type: 'http', port: nconf.get('seneca:auth:port') });
