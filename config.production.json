@@ -9,10 +9,11 @@
   },
   "consul": {
     "host": "127.0.0.1",
-    "post": "8500",
+    "port": 8500,
     "name": "auth",
     "tags": ["auth"],
-    "address": "172.18.212.163"
+    "address": "172.18.212.163",
+    "servicePort": 10001
   },
   "logger": {
     "consoleLevel": 4,
