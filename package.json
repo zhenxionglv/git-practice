@@ -26,7 +26,7 @@
     "mongoose": "^4.7.6",
     "nconf": "^0.8.4",
     "seneca": "^3.2.2",
-    "xyj-consul": "0.0.2",
+    "xyj-consul": "^0.0.3",
     "xyj-logger": "0.0.1"
   },
   "devDependencies": {
