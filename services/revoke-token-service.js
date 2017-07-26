@@ -9,6 +9,7 @@ class RevokeTokenService {
    * @param done
    */
   static setRevokeToken(msg, done) {
+    console.log(msg);
     if (!msg.data) {
       return done(new Error('token:缺少必须的参数msg.data'));
     }
